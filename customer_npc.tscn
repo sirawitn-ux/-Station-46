@@ -32,3 +32,4 @@ transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, -
 [node name="Node" type="Node" parent="." unique_id=1038344592]
 script = ExtResource("3_r2rvt")
 steps = Array[AudioStream]([ExtResource("4_pni4w")])
+volume_db = -2.0

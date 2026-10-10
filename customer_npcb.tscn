@@ -31,3 +31,4 @@ collide_with_areas = true
 [node name="Node" type="Node" parent="." unique_id=233231552]
 script = ExtResource("3_oo11w")
 steps = Array[AudioStream]([ExtResource("4_fgcjq")])
+volume_db = -1.0

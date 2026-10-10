@@ -74,7 +74,10 @@
 [ext_resource type="Script" uid="uid://bgfld4o5teeyu" path="res://restock_task.gd" id="71_d3js0"]
 [ext_resource type="PackedScene" uid="uid://itl20oieay2a" path="res://customer_npc.tscn" id="71_f8lvc"]
 [ext_resource type="PackedScene" uid="uid://cv28hubub4t5x" path="res://bus_stop.tscn" id="72_44ogl"]
+[ext_resource type="AudioStream" uid="uid://dp0a1u081w6ft" path="res://01_pickup_stock.wav" id="72_lsb6s"]
+[ext_resource type="AudioStream" uid="uid://c2stje3hatwfa" path="res://02_place_item.wav" id="73_eg5sd"]
 [ext_resource type="PackedScene" uid="uid://bqu8vn0i2py3u" path="res://car_a.tscn" id="74_4utwu"]
+[ext_resource type="AudioStream" uid="uid://cf25y3l88edbx" path="res://03_stock_success.wav" id="74_vigfj"]
 [ext_resource type="AudioStream" uid="uid://co73larqbwwnx" path="res://data/PSX_Style_Cars_by_GGBot_(August2023)/Sound effects/Car_Door_Open.ogg" id="75_g1gkj"]
 [ext_resource type="AudioStream" uid="uid://yvy4b118dew4" path="res://data/PSX_Style_Cars_by_GGBot_(August2023)/Sound effects/Car_Door_Close.ogg" id="76_d3js0"]
 [ext_resource type="PackedScene" path="res://trash_task.tscn" id="77_d58x2"]
@@ -37410,6 +37413,9 @@ mesh = SubResource("ArrayMesh_w5kpk")
 [node name="RestockTask" type="Node3D" parent="NavigationRegion3D" unique_id=1910004211]
 transform = Transform3D(0.897046, 0, 0, 0, 2.5361207, 0, 0, 0, 4.399774, -0.78560495, 0.7143662, -28.260849)
 script = ExtResource("71_d3js0")
+snd_pickup = ExtResource("72_lsb6s")
+snd_place = ExtResource("73_eg5sd")
+snd_complete = ExtResource("74_vigfj")
 
 [node name="StockPoint" type="Marker3D" parent="NavigationRegion3D/RestockTask" unique_id=330264739]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9999999, 0, 0, 0, 1, 4.4258685, 0, 0.35801935)
@@ -37623,6 +37629,7 @@ exit_points = [NodePath("../TargetPointA2"), NodePath("../TargetPointA2"), NodeP
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=328447376]
 stream = ExtResource("91_pvpyg")
+volume_db = -2.0
 autoplay = true
 script = ExtResource("92_wvis1")
 

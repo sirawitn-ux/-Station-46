@@ -40,3 +40,4 @@ shape = SubResource("SphereShape3D_f3bvx")
 [node name="Node" type="Node" parent="." unique_id=1906675378]
 script = ExtResource("2_1xvl6")
 steps = Array[AudioStream]([ExtResource("3_8mn0i")])
+volume_db = -1.0

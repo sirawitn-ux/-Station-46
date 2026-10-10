@@ -28,3 +28,4 @@ collide_with_areas = true
 [node name="Node" type="Node" parent="." unique_id=999996848]
 script = ExtResource("3_hqtel")
 steps = Array[AudioStream]([ExtResource("4_sweqy")])
+volume_db = -1.0

@@ -5955,5 +5955,6 @@ transform = Transform3D(0.09657203, 3.5527144e-14, 0.945699, 3.1764786e-14, 1.00
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1205202725]
 stream = ExtResource("23_nq74j")
+volume_db = -2.0
 autoplay = true
 script = ExtResource("24_35ttg")
