@@ -74,16 +74,12 @@
 [ext_resource type="Script" uid="uid://bgfld4o5teeyu" path="res://restock_task.gd" id="71_d3js0"]
 [ext_resource type="PackedScene" uid="uid://itl20oieay2a" path="res://customer_npc.tscn" id="71_f8lvc"]
 [ext_resource type="PackedScene" uid="uid://cv28hubub4t5x" path="res://bus_stop.tscn" id="72_44ogl"]
-[ext_resource type="AudioStream" uid="uid://dp0a1u081w6ft" path="res://01_pickup_stock.wav" id="72_lsb6s"]
-[ext_resource type="AudioStream" uid="uid://c2stje3hatwfa" path="res://02_place_item.wav" id="73_eg5sd"]
 [ext_resource type="PackedScene" uid="uid://bqu8vn0i2py3u" path="res://car_a.tscn" id="74_4utwu"]
-[ext_resource type="AudioStream" uid="uid://cf25y3l88edbx" path="res://03_stock_success.wav" id="74_vigfj"]
 [ext_resource type="AudioStream" uid="uid://co73larqbwwnx" path="res://data/PSX_Style_Cars_by_GGBot_(August2023)/Sound effects/Car_Door_Open.ogg" id="75_g1gkj"]
 [ext_resource type="AudioStream" uid="uid://yvy4b118dew4" path="res://data/PSX_Style_Cars_by_GGBot_(August2023)/Sound effects/Car_Door_Close.ogg" id="76_d3js0"]
 [ext_resource type="PackedScene" path="res://trash_task.tscn" id="77_d58x2"]
 [ext_resource type="AudioStream" uid="uid://benw2kk48o0do" path="res://data/PSX_Style_Cars_by_GGBot_(August2023)/Sound effects/Car2_Engine_Start_Up.ogg" id="77_wna7h"]
 [ext_resource type="AudioStream" uid="uid://df1308xphmmg" path="res://data/PSX_Style_Cars_by_GGBot_(August2023)/Sound effects/Car2_Engine_Loop.ogg" id="78_l20a4"]
-[ext_resource type="AudioStream" uid="uid://dvtilodg4v2y4" path="res://floraphonic-rustling-bushes-dried-leaves-6-230205.mp3" id="78_wvis1"]
 [ext_resource type="AudioStream" uid="uid://lo63jtm48woe" path="res://data/PSX_Style_Cars_by_GGBot_(August2023)/Sound effects/Car_Acceleration.ogg" id="79_lsb6s"]
 [ext_resource type="Script" uid="uid://dbwjw3pe4hvba" path="res://แมพ/node.gd" id="84_eg5sd"]
 [ext_resource type="PackedScene" uid="uid://brlkao2b5rj3c" path="res://car_b.tscn" id="85_fq3uh"]
@@ -33148,7 +33144,7 @@ shadow_enabled = true
 environment = SubResource("Environment_noarx")
 
 [node name="Player" parent="." unique_id=416038610 instance=ExtResource("69_lvvlc")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.2392702, 3.0477178, -4.9428096)
+transform = Transform3D(-0.13402238, 0, 0.9909783, 0, 1, 0, -0.9909783, 0, -0.13402238, 70.918945, 1.5697589, 17.53255)
 
 [node name="CustomerNPC" parent="." unique_id=1228021449 node_paths=PackedStringArray("route_points") instance=ExtResource("71_f8lvc")]
 transform = Transform3D(-0.043609194, 0, 0.9990487, 0, 1, 0, -0.9990487, 0, -0.043609194, 8.903079, 1.2466947, -16.172146)
@@ -37414,9 +37410,6 @@ mesh = SubResource("ArrayMesh_w5kpk")
 [node name="RestockTask" type="Node3D" parent="NavigationRegion3D" unique_id=1910004211]
 transform = Transform3D(0.897046, 0, 0, 0, 2.5361207, 0, 0, 0, 4.399774, -0.78560495, 0.7143662, -28.260849)
 script = ExtResource("71_d3js0")
-snd_pickup = ExtResource("72_lsb6s")
-snd_place = ExtResource("73_eg5sd")
-snd_complete = ExtResource("74_vigfj")
 
 [node name="StockPoint" type="Marker3D" parent="NavigationRegion3D/RestockTask" unique_id=330264739]
 transform = Transform3D(0.9999997, 0, 0, 0, 0.9999999, 0, 0, 0, 1, 4.4258685, 0, 0.35801935)
@@ -37485,7 +37478,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.118778, 0, -22.121431)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.901776, 0.27690744, -38.70619)
 killer_spawn_point = NodePath("KillerSpawnPoint")
 camera_point = NodePath("KillerCameraPoint")
-appear_sound = ExtResource("78_wvis1")
 
 [node name="KillerCameraPoint" parent="TrashTask/KillerCutscene" index="1" unique_id=1887659741]
 transform = Transform3D(1, 0, 0, 0, 0.97063446, -0.24055924, 0, 0.2405592, 0.9706346, 9.020656, 2.918534, 7.720503)
