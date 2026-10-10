@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://cqx6uj3icxx5u"]
+
+[ext_resource type="Script" uid="uid://s6iwll3ktf4y" path="res://customer_npca.gd" id="1_8mn0i"]
+[ext_resource type="PackedScene" uid="uid://d81s6xw3hwkf" path="res://ตัวละคร/Bear.tscn" id="1_fqehj"]
+[ext_resource type="Script" uid="uid://c720mbrhg4flk" path="res://footsteps.gd" id="2_1xvl6"]
+[ext_resource type="AudioStream" uid="uid://cfonrf082wrpe" path="res://freesound_community-walking-96582.mp3" id="3_8mn0i"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vr52o"]
+radius = 0.47265625
+height = 2.2185059
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_f3bvx"]
+radius = 0.9076308
+
+[node name="CustomerNPCA" type="CharacterBody3D" unique_id=463455971]
+script = ExtResource("1_8mn0i")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=108882389]
+transform = Transform3D(0.6622071, 0, 0, 0, 1, 0, 0, 0, 0.6266331, 0, 0.9095225, 0)
+shape = SubResource("CapsuleShape3D_vr52o")
+
+[node name="Character_Killer_10" parent="." unique_id=1422994411 instance=ExtResource("1_fqehj")]
+
+[node name="Area3D" type="Area3D" parent="." unique_id=112140431]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, 1.4976871, 0)
+
+[node name="RayCast3D" type="RayCast3D" parent="Area3D" unique_id=1619956831]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.078336954, 0)
+target_position = Vector3(0, 0, -2.5)
+collide_with_areas = true
+
+[node name="Area3D2" type="Area3D" parent="." unique_id=2008718938]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D2" unique_id=822227893]
+transform = Transform3D(4.089304, 0, 0, 0, 4.235218, 0, 0, 0, 4.1605926, 0, 0, 0)
+shape = SubResource("SphereShape3D_f3bvx")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=436082746]
+
+[node name="Node" type="Node" parent="." unique_id=1906675378]
+script = ExtResource("2_1xvl6")
+steps = Array[AudioStream]([ExtResource("3_8mn0i")])

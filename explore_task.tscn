@@ -1,0 +1,29 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://explore_task.gd" id="1_explore"]
+
+[node name="ExploreTask" type="Node3D"]
+script = ExtResource("1_explore")
+
+[node name="Point1" type="Marker3D" parent="."]
+gizmo_extents = 0.6
+
+[node name="Point2" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 3)
+gizmo_extents = 0.6
+
+[node name="Point3" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 3)
+gizmo_extents = 0.6
+
+[node name="Point4" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 3)
+gizmo_extents = 0.6
+
+[node name="Point5" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 3)
+gizmo_extents = 0.6
+
+[node name="Point6" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 3)
+gizmo_extents = 0.6

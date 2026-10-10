@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c2lgdwps8scpp"
+path="res://.godot/imported/freesound_community-car-accident-with-squeal-and-crash-6054.mp3-4dc4c2d286a60f956a055b9e3c9fc5fd.mp3str"
+
+[deps]
+
+source_file="res://data/PSX_Style_Cars_by_GGBot_(August2023)/Sound effects/freesound_community-car-accident-with-squeal-and-crash-6054.mp3"
+dest_files=["res://.godot/imported/freesound_community-car-accident-with-squeal-and-crash-6054.mp3-4dc4c2d286a60f956a055b9e3c9fc5fd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

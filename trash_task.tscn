@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://trash_task.gd" id="1_trash"]
+[ext_resource type="PackedScene" path="res://killer_cutscene.tscn" id="2_killer"]
+
+[node name="TrashTask" type="Node3D"]
+script = ExtResource("1_trash")
+
+[node name="PickupPoint" type="Marker3D" parent="."]
+gizmo_extents = 0.6
+
+[node name="TrashBinPoint" type="Marker3D" parent="."]
+gizmo_extents = 0.6
+
+[node name="KillerCutscene" parent="." instance=ExtResource("2_killer")]
+
+[node name="KillerSpawnPoint" parent="KillerCutscene" index="0"]
+
+[node name="KillerCameraPoint" parent="KillerCutscene" index="1"]
+
+[node name="RoutePoint1" parent="KillerCutscene" index="2"]
+
+[node name="RoutePoint2" parent="KillerCutscene" index="3"]
+
+[node name="RoutePoint3" parent="KillerCutscene" index="4"]

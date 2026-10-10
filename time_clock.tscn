@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dbhmlkyjixmcb"]
+
+[ext_resource type="Script" uid="uid://bowg28ft8x8uf" path="res://time_clock.gd" id="1_absuc"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_f3bvx"]
+
+[node name="TimeClock" type="Area3D" unique_id=1561444667]
+script = ExtResource("1_absuc")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=232616141]
+transform = Transform3D(1, 0, 0, 0, 0.09465015, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("BoxShape3D_f3bvx")

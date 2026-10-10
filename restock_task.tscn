@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://cqgs45ox7g7dk"]
+
+[ext_resource type="Script" uid="uid://bgfld4o5teeyu" path="res://restock_task.gd" id="1_restock"]
+
+[node name="RestockTask" type="Node3D" unique_id=156039759]
+script = ExtResource("1_restock")
+
+[node name="StockPoint" type="Marker3D" parent="." unique_id=533289119]
+gizmo_extents = 0.6
+
+[node name="Shelf1" type="Marker3D" parent="." unique_id=216665006]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.100379, -0.11262441, 3)
+gizmo_extents = 0.6
+
+[node name="Shelf2" type="Marker3D" parent="." unique_id=2096405498]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 3)
+gizmo_extents = 0.6
+
+[node name="Shelf3" type="Marker3D" parent="." unique_id=1665480426]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0, 3)
+gizmo_extents = 0.6
+
+[node name="Shelf4" type="Marker3D" parent="." unique_id=482957996]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 3)
+gizmo_extents = 0.6
+
+[node name="Shelf5" type="Marker3D" parent="." unique_id=18881036]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 3)
+gizmo_extents = 0.6
+
+[node name="Shelf6" type="Marker3D" parent="." unique_id=770042162]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0, 3)
+gizmo_extents = 0.6

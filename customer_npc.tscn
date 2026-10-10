@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://itl20oieay2a"]
+
+[ext_resource type="Script" uid="uid://10oqoofpgds5" path="res://CustomerNPC.gd" id="1_aeirw"]
+[ext_resource type="PackedScene" uid="uid://bux0mbodhduvg" path="res://ตัวละคร/character_female_03.tscn" id="2_2w10h"]
+[ext_resource type="Script" uid="uid://c720mbrhg4flk" path="res://footsteps.gd" id="3_r2rvt"]
+[ext_resource type="AudioStream" uid="uid://cfonrf082wrpe" path="res://freesound_community-walking-96582.mp3" id="4_pni4w"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2e4yk"]
+radius = 0.47265625
+height = 2.2185059
+
+[node name="CustomerNPC" type="CharacterBody3D" unique_id=1228021449]
+script = ExtResource("1_aeirw")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2045091408]
+transform = Transform3D(0.6622071, 0, 0, 0, 1, 0, 0, 0, 0.6266331, 0, 0.10925293, 0)
+shape = SubResource("CapsuleShape3D_2e4yk")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1094714557]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.44317955, 0)
+
+[node name="RayCast3D" type="RayCast3D" parent="Area3D" unique_id=271689452]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.078336954, 0)
+target_position = Vector3(0, 0, -2.5)
+collide_with_areas = true
+
+[node name="Character_Female_03" parent="." unique_id=666157000 instance=ExtResource("2_2w10h")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 0, -0.84967446, 0)
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="." unique_id=307650933]
+
+[node name="Node" type="Node" parent="." unique_id=1038344592]
+script = ExtResource("3_r2rvt")
+steps = Array[AudioStream]([ExtResource("4_pni4w")])

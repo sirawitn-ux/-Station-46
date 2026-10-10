@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c4yev52rx8sq3"
+path="res://.godot/imported/Car_Engine_Loop_2.ogg-9588c5092c59e83649230700997f2765.oggvorbisstr"
+
+[deps]
+
+source_file="res://data/PSX_Style_Cars_by_GGBot_(August2023)/Sound effects/Car_Engine_Loop_2.ogg"
+dest_files=["res://.godot/imported/Car_Engine_Loop_2.ogg-9588c5092c59e83649230700997f2765.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
